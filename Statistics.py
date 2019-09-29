@@ -1,7 +1,7 @@
 class Statistics:
     def values(self, string):
         if string == "":
-            return [0, 0]
+            return [0, 0, 0]
         elif ',' in string:
             cadena = list(map(int, string.split(",")))
             return [len(cadena), min(cadena)]
