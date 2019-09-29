@@ -15,6 +15,6 @@ class StatisticsTest(TestCase):
         self.assertEqual(Statistics().values("5,9"), [2, 5, 9, 7], "Cadena Con dos números")
 
     def test_values_NNumbers(self):
-        self.assertEqual(Statistics().values("1,2,6,2"), [4, 1, 6], "Cadena Con mas de dos números")
-        self.assertEqual(Statistics().values("10,2,6,2,5,2,6"), [7, 2, 10], "Cadena Con mas de dos números")
+        self.assertEqual(Statistics().values("1,2,6,2"), [4, 1, 6, 2.75], "Cadena Con mas de dos números")
+        self.assertEqual(Statistics().values("10,2,6,2,5,2,6"), [7, 2, 10, 4.7142857142857], "Cadena Con mas de dos números")
 
