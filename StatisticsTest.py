@@ -11,7 +11,8 @@ class StatisticsTest(TestCase):
         self.assertEqual(Statistics().values("5"), [1, 5], "Cadena Con un número")
 
     def test_values_twoNumbers(self):
-        self.assertEqual(Statistics().values("1,2"), [2], "Cadena Con dos números")
+        self.assertEqual(Statistics().values("1,2"), [2, 1], "Cadena Con dos números")
+        self.assertEqual(Statistics().values("5,9"), [2, 5], "Cadena Con dos números")
 
     def test_values_NNumbers(self):
         self.assertEqual(Statistics().values("1,2,6,2"), [4], "Cadena Con mas de dos números")
