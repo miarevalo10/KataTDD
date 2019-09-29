@@ -6,4 +6,4 @@ class Statistics:
             cadena = string.split(",")
             return [len(cadena)]
         else:
-            return [1]
+            return [1, int(string)]
