@@ -7,4 +7,4 @@ class Statistics:
             return [len(cadena), min(cadena), max(cadena)]
         else:
             num = int(string)
-            return [1, num, num]
+            return [1, num, num, num]
