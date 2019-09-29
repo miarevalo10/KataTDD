@@ -3,8 +3,10 @@ class Statistics:
         if string == "":
             return [0, 0, 0, 0]
         elif ',' in string:
-            cadena = list(map(int, string.split(",")))
-            return [len(cadena), min(cadena), max(cadena)]
+            cadena = string.split(",")
+            num1 = int(string[0])
+            num2 = int(string[2])
+            return [len(cadena), min(num1, num2), max(num1, num2), (num1 + num2)/2]
         else:
             num = int(string)
             return [1, num, num, num]
