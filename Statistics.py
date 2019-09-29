@@ -1,12 +1,13 @@
+import statistics
+
+
 class Statistics:
     def values(self, string):
         if string == "":
             return [0, 0, 0, 0]
         elif ',' in string:
-            cadena = string.split(",")
-            num1 = int(string[0])
-            num2 = int(string[2])
-            return [len(cadena), min(num1, num2), max(num1, num2), (num1 + num2)/2]
+            cadena = list(map(int, string.split(",")))
+            return [len(cadena), min(cadena), max(cadena), statistics.mean(cadena)]
         else:
             num = int(string)
             return [1, num, num, num]
