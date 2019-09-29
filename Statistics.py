@@ -3,7 +3,7 @@ class Statistics:
         if string == "":
             return [0, 0]
         elif ',' in string:
-            cadena = string.split(",")
-            return [len(cadena), min(int(string[0]), int(string[2]))]
+            cadena = list(map(int, string.split(",")))
+            return [len(cadena), min(cadena)]
         else:
             return [1, int(string)]
