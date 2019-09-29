@@ -6,4 +6,5 @@ class Statistics:
             cadena = list(map(int, string.split(",")))
             return [len(cadena), min(cadena)]
         else:
-            return [1, int(string)]
+            num = int(string)
+            return [1, num, num]
